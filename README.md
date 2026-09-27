@@ -19,7 +19,7 @@ The network includes:
 - 1 Wireless Access Point
 - 1 Guest Laptop
 
-![Network Topology](01-network-topology.png)
+![Network Topology](images/01-network-topology.png)
 
 ## VLAN Design
 
@@ -32,7 +32,7 @@ The network is divided into four VLANs:
 | Sales | 30 | 192.168.30.0/24 | 192.168.30.1 |
 | Guest | 40 | 192.168.40.0/24 | 192.168.40.1 |
 
-![VLAN Configuration](02-vlan-configuration.png)
+![VLAN Configuration](images/02-vlan-configuration.png)
 
 ## Trunk Configuration
 
@@ -40,7 +40,7 @@ The connection between the switch and router is configured as an 802.1Q trunk.
 
 The trunk carries traffic for VLANs 10, 20, 30, and 40.
 
-![Trunk Configuration](03-trunk-configuration.png)
+![Trunk Configuration](images/03-trunk-configuration.png)
 
 ## Inter-VLAN Routing
 
@@ -53,7 +53,7 @@ Each VLAN has its own gateway:
 - VLAN 30 - 192.168.30.1
 - VLAN 40 - 192.168.40.1
 
-![Router Subinterfaces](04-router-subinterfaces.png)
+![Router Subinterfaces](images/04-router-subinterfaces.png)
 
 ## DHCP Configuration
 
@@ -66,7 +66,7 @@ Clients automatically receive:
 - Default gateway
 - DNS server
 
-![DHCP Client](05-dhcp-client.png)
+![DHCP Client](images/05-dhcp-client.png)
 
 ## Inter-VLAN Connectivity Test
 
@@ -74,7 +74,7 @@ Connectivity between different VLANs was tested using ICMP ping.
 
 A successful ping between hosts in different VLANs confirms that inter-VLAN routing is functioning correctly.
 
-![Inter-VLAN Routing Test](06-inter-vlan-routing-test.png)
+![Inter-VLAN Routing Test](images/06-inter-vlan-routing-test.png)
 
 ## Network Printer
 
